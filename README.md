@@ -13,15 +13,15 @@ npm install modal-react-validation
 ## Import the Modal component
 
 ```jsx
-import MyComponent from 'modal-react-validation'
+import { ModalComponent } from 'modal-react-validation'
 ```
 
 ## then you need to call the Modal component with two props and write the message.
 
 ```jsx
-<Modal open={open} setOpen={setOpen}>
+<ModalComponent open={open} setOpen={setOpen}>
   message
-</Modal>
+</ModalComponent>
 ```
 
 ## License

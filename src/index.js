@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
-import styles from './styles.module.css'
+import React from 'react'
 import Modal from './Modal'
 
-export const ModalComponent = () => {
-  const [open, setOpen] = useState(true)
+export const ModalComponent = ({ open, setOpen }) => {
   return (
-    <div className={styles.modal}>
-      <Modal open={open} setOpen={setOpen}>
-        Employee created!
-      </Modal>
-    </div>
+    <Modal open={open} setOpen={setOpen}>
+      Employee created!
+    </Modal>
   )
 }
