@@ -4,25 +4,24 @@
 
 [![NPM](https://img.shields.io/npm/v/modal-react-validation.svg)](https://www.npmjs.com/package/modal-react-validation) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+## Install this package
 
 ```bash
-npm install --save modal-react-validation
+npm install modal-react-validation
 ```
 
-## Usage
+## Import the Modal component
 
 ```jsx
-import React, { Component } from 'react'
-
 import MyComponent from 'modal-react-validation'
-import 'modal-react-validation/dist/index.css'
+```
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+## then you need to call the Modal component with two props and write the message.
+
+```jsx
+<Modal open={open} setOpen={setOpen}>
+  message
+</Modal>
 ```
 
 ## License
