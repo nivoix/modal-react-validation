@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styles from './styles.module.css'
+import { FaCheck } from 'react-icons/fa'
 
 const Modal = ({ children, open, setOpen }) => {
   return (
@@ -8,7 +9,7 @@ const Modal = ({ children, open, setOpen }) => {
         <div className={styles.modalContent}>
           {children}
           <button className={styles.btn} onClick={() => setOpen(false)}>
-            X
+            <FaCheck /> OK
           </button>
         </div>
       </div>
