@@ -8,8 +8,8 @@
 
 This component uses the following tech stack:
 
-- [Node.js v12](https://nodejs.org/en/)
-- [React](https://react.dev/learn/start-a-new-react-project)
+- [Node.js >= v20](https://nodejs.org/en/)
+- [React >= v18](https://react.dev/learn/start-a-new-react-project)
 
 Please make sure you have the right versions and download both packages. You can verify this by using this command in your terminal:
 
@@ -24,18 +24,22 @@ node --version
 npm install modal-react-validation
 ```
 
-## Import the Modal component
+## Import the Modal component, then you need to call the Modal component with two props and write your message.
 
 ```jsx
+import React, { useState } from 'react'
 import { ModalComponent } from 'modal-react-validation'
-```
 
-## then you need to call the Modal component with two props and write your message.
+function App() {
+  const [open, setOpen] = useState(false)
 
-```jsx
-<ModalComponent open={open} setOpen={setOpen}>
-  your message
-</ModalComponent>
+  return (
+    <ModalComponent open={open} setOpen={setOpen}>
+      your message
+    </ModalComponent>
+  )
+}
+export default App
 ```
 
 ## License
